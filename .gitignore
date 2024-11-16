@@ -8,7 +8,6 @@ logs/
 .DS_Store
 sqldb/
 .streamlit/
-*.pkl
 secrets.toml
 tmp/
 

@@ -22,40 +22,94 @@ def all_dashboard_company(_company):
 
 
         col1, col2, col3, col4, col5,= st.columns(5)
-        col1.metric("INSURANCE 관련기사", _fnumber(11213) + " 개", "")
-        col2.metric("BUSINESS 관련기사", _fnumber(15658) + " 개", "")
-        col3.metric("ESG 관련기사", _fnumber(9374) + " 개", "")
-        col4.metric("COMPLIANCE 관련기사", _fnumber(16917) + " 개", "")
-        col5.metric("ORGANIZATION 관련기사", _fnumber(8903) + " 개", "")
+        col1.metric("SOCIAL 관련기사", _fnumber(11213) + " 개", "")
+        col2.metric("ILLEGAL 관련기사", _fnumber(15658) + " 개", "")
+        col3.metric("CONTRACT 관련기사", _fnumber(9374) + " 개", "")
+        col4.metric("ENT 관련기사", _fnumber(16917) + " 개", "")
+        col5.metric("SAJAEGI 관련기사", _fnumber(8903) + " 개", "")
         col6, col7, col8, col9, col10 = st.columns(5)
-        col6.metric("MARKET 관련기사", _fnumber(10903) + " 개", "")
-        col7.metric("TECHINNOV 관련기사", _fnumber(4016) + " 개", "")
-        col8.metric("SPORTS 관련기사", _fnumber(51282) + " 개", "")
-        col9.metric("AD 관련기사", _fnumber(820) + " 개", "")
+        col6.metric("MUSIC 관련기사", _fnumber(10903) + " 개", "")
+        col7.metric("AD 관련기사", _fnumber(4016) + " 개", "")
+        col8.metric("RIP 관련기사", _fnumber(51282) + " 개", "")
+        col9.metric("AWARD 관련기사", _fnumber(820) + " 개", "")
         col10.metric("NO 관련기사", _fnumber(20193) + " 개", "")
+
+        st.divider()
+        # st.markdown("*Streamlit* is **really** ***cool***.")
+        # st.markdown('''
+        #     :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
+        #     :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
+        # st.markdown("Here's a bouquet &mdash;\
+        #             :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
+
+        multi = '''timeline
+
+        가수 뉴스 #1
+        '''
+        st.markdown(multi)
+
+
+
+        multi = '''timeline
+
+        가수 뉴스 #2
+        '''
+        st.markdown(multi)
+
+
+
+        multi = '''timeline
+
+        가수 뉴스 #3
+        '''
+        st.markdown(multi)
+
+
+
+
+
     with tab2:
-        st.markdown(f"<h4><span style='font-size:20px; color:gray;'>시스템 설명</span></h4>", unsafe_allow_html=True)
-        st.write('시스템 설명..주절주절.......')
-        st.write('주절주절..')
+        st.markdown(f"<h4><span style='font-size:20px; color:gray;'>시스템 사용 설명</span></h4>", unsafe_allow_html=True)
+        st.write('사용법 제목')
+        st.caption('사용법 나열 #1')
+        st.caption('사용법 나열 #2')
         st.write('')
         # st.write('국내 언론에서 "진민호" 의 기사를 파악하여, 인사이트 도출과 전략수립, 리스크관리 그리고 경쟁사 비교등에 사용할수 있도록 데모를 만들어 보았습니다.')
         # st.write('2020.01.01 부터 2024.11.04 까지의 "진민호"에 대한 국내 언론뉴스를 ""빠짐없이 모두"" 수집하여,')
         # st.write('llm (AI) 을 통한 카테코리 분류, 요약, 키워드 추출, 통계, 분석을 수행하는 시스템 입니다.')
-        st.caption('국내 언론에서 "진민호" 의 기사를 파악하여, 인사이트 도출과 전략수립, 리스크 관리 그리고 경쟁사 비교등에 사용할수 있도록 데모를 만들어 보았습니다.')
-        st.caption('2020.01.01 부터 2024.11.04 까지의 "진민호"에 대한 국내 언론뉴스를 ""빠짐없이 모두"" 수집하여, llm (AI) 을 통한 카테코리 분류, 요약, 키워드 추출, 통계, 분석을 수행하는 시스템 입니다.')
+        # st.caption('국내 언론에서 가수/그룹 의 기사를 파악하여, 인사이트 도출과 전략수립, 리스크 관리 그리고 경쟁사 비교등에 사용할수 있도록 데모를 만들어 보았습니다.')
+        # st.caption('2020.01.01 부터 2024.11.04 까지의 "진민호"에 대한 국내 언론뉴스를 ""빠짐없이 모두"" 수집하여, llm (AI) 을 통한 카테코리 분류, 요약, 키워드 추출, 통계, 분석을 수행하는 시스템 입니다.')
     with tab3:
         st.markdown(f"<h4><span style='font-size:20px; color:gray;'>분류기준</span></h4>", unsafe_allow_html=True)
-        st.write('- **INSURANCE** : 진민호의 금융 상품이나 보험 상품에 관한 내용')
-        st.write('- **BUSINESS** : 진민호의 경영 활동이나 실적과 관련된 내용')
-        st.write('- **ESG** : 진민호의 사회적 책임 활동이나 ESG(환경, 사회, 지배구조)와 관련된 내용')
-        st.write('- **COMPLIANCE** : 진민호과 관련된 법적 문제나 규제 이슈에 대한 내용')
-        st.write('- **ORGANIZATION** : 진민호의 인사 이동이나 조직 개편과 관련된 내용')
-        st.write('- **MARKET** : 진민호의 보험 및 금융 시장에서의 위치나 경쟁 상황과 관련된 내용')
-        st.write('- **TECHINNOV** : 진민호의 기술 혁신이나 디지털 전환과 관련된 내용')
-        st.write('- **SPORTS** : 진민호 소속 스포츠 구단이나, 스포츠 육성 및 저변확대에 관련된 내용')
-        st.write('- **AD** : 진민호의 광고 캠페인이나 홍보 활동과 관련된 내용')
-        st.write('- **NO** : 진민호과 관련된 특정 카테고리에 포함되지 않는 내용')
+        st.write('- **SOCIAL** : 가수나 그룹의 법적 논란 혹은 의혹이 있는 일. 무혐의 처분을 받았더라도, 의혹이 있다면 해당됨.')
+        st.write('- **ILLEGAL** : 가수나 그룹의 마약, 음주운전, sexual 이슈, 사기 가해, 도박등 법적인 잘못에 해당하는 일.')
+        st.write('- **CONTRACT** : 가수나 그룹의 군대 입대 관련 내용, 가수나 그룹의 재계약 및 소속사 관련한 일.')
+        st.write('- **ENT** : 가수나 그룹이 방송 활동 및 방송 출연 내용, 가수가 홍보 목적으로 방송에 출연한 내용.')
+        st.write('- **SAJAEGI** : 가수나 그룹이 부당한 방법으로 홍보를 위해 사재기 한 내용.')
+        st.write('- **MUSIC** : 가수나 그룹이 앨범,공연(콘서트) 등의 음악 활동.')
+        st.write('- **AD** : 가수나 그룹이 광고, 엠베서더 활동을 한 내용. 가수나 그룹이 CF, 광고 혹은 캠페인 활동.')
+        st.write('- **RIP** : 가수 혹은 그룹의 멤버가 사망한 일.')
+        st.write('- **AWARD** : 가수나 그룹이 연말 시상식 혹은 문체부에서 수상한 일.')
+        st.write('- **NO** : 위 어느 분류에도 해당하지 않은것들')
     st.divider()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,87 @@
+[
+    {
+        "2020": {
+            "total_articles": 1267,
+            "class_counts": {
+                "class_SOCIAL": 22,
+                "class_ILLEGAL": 878,
+                "class_CONTRACT": 4,
+                "class_ENT": 202,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 43,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 1,
+                "class_NO": 117
+            }
+        }
+    },
+    {
+        "2021": {
+            "total_articles": 749,
+            "class_counts": {
+                "class_SOCIAL": 9,
+                "class_ILLEGAL": 580,
+                "class_CONTRACT": 2,
+                "class_ENT": 32,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 21,
+                "class_AD": 2,
+                "class_RIP": 0,
+                "class_AWARD": 3,
+                "class_NO": 100
+            }
+        }
+    },
+    {
+        "2022": {
+            "total_articles": 467,
+            "class_counts": {
+                "class_SOCIAL": 8,
+                "class_ILLEGAL": 53,
+                "class_CONTRACT": 0,
+                "class_ENT": 187,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 97,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 2,
+                "class_NO": 120
+            }
+        }
+    },
+    {
+        "2023": {
+            "total_articles": 357,
+            "class_counts": {
+                "class_SOCIAL": 45,
+                "class_ILLEGAL": 152,
+                "class_CONTRACT": 1,
+                "class_ENT": 45,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 44,
+                "class_AD": 0,
+                "class_RIP": 2,
+                "class_AWARD": 3,
+                "class_NO": 65
+            }
+        }
+    },
+    {
+        "2024": {
+            "total_articles": 230,
+            "class_counts": {
+                "class_SOCIAL": 25,
+                "class_ILLEGAL": 71,
+                "class_CONTRACT": 0,
+                "class_ENT": 19,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 63,
+                "class_AD": 0,
+                "class_RIP": 2,
+                "class_AWARD": 1,
+                "class_NO": 49
+            }
+        }
+    }
+]

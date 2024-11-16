@@ -1,0 +1,988 @@
+[
+    {
+        "2020-01": {
+            "total_articles": 286,
+            "class_counts": {
+                "class_SOCIAL": 1,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 168,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 41,
+                "class_AD": 6,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 70
+            }
+        }
+    },
+    {
+        "2020-02": {
+            "total_articles": 131,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 106,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 2,
+                "class_AD": 1,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 22
+            }
+        }
+    },
+    {
+        "2020-03": {
+            "total_articles": 161,
+            "class_counts": {
+                "class_SOCIAL": 1,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 136,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 0,
+                "class_AD": 1,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 23
+            }
+        }
+    },
+    {
+        "2020-04": {
+            "total_articles": 83,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 50,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 3,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 30
+            }
+        }
+    },
+    {
+        "2020-05": {
+            "total_articles": 100,
+            "class_counts": {
+                "class_SOCIAL": 7,
+                "class_ILLEGAL": 5,
+                "class_CONTRACT": 0,
+                "class_ENT": 64,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 0,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 24
+            }
+        }
+    },
+    {
+        "2020-06": {
+            "total_articles": 210,
+            "class_counts": {
+                "class_SOCIAL": 58,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 16,
+                "class_ENT": 77,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 0,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 58
+            }
+        }
+    },
+    {
+        "2020-07": {
+            "total_articles": 248,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 26,
+                "class_ENT": 153,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 2,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 67
+            }
+        }
+    },
+    {
+        "2020-08": {
+            "total_articles": 187,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 130,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 9,
+                "class_AD": 8,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 40
+            }
+        }
+    },
+    {
+        "2020-09": {
+            "total_articles": 287,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 187,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 28,
+                "class_AD": 1,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 71
+            }
+        }
+    },
+    {
+        "2020-10": {
+            "total_articles": 242,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 1,
+                "class_ENT": 147,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 13,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 81
+            }
+        }
+    },
+    {
+        "2020-11": {
+            "total_articles": 183,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 129,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 31,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 23
+            }
+        }
+    },
+    {
+        "2020-12": {
+            "total_articles": 132,
+            "class_counts": {
+                "class_SOCIAL": 2,
+                "class_ILLEGAL": 8,
+                "class_CONTRACT": 0,
+                "class_ENT": 88,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 2,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 1,
+                "class_NO": 31
+            }
+        }
+    },
+    {
+        "2021-01": {
+            "total_articles": 192,
+            "class_counts": {
+                "class_SOCIAL": 3,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 1,
+                "class_ENT": 151,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 10,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 1,
+                "class_NO": 26
+            }
+        }
+    },
+    {
+        "2021-02": {
+            "total_articles": 72,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 35,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 2,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 35
+            }
+        }
+    },
+    {
+        "2021-03": {
+            "total_articles": 344,
+            "class_counts": {
+                "class_SOCIAL": 2,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 290,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 6,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 46
+            }
+        }
+    },
+    {
+        "2021-04": {
+            "total_articles": 228,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 5,
+                "class_ENT": 179,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 10,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 34
+            }
+        }
+    },
+    {
+        "2021-05": {
+            "total_articles": 259,
+            "class_counts": {
+                "class_SOCIAL": 10,
+                "class_ILLEGAL": 2,
+                "class_CONTRACT": 6,
+                "class_ENT": 152,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 4,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 85
+            }
+        }
+    },
+    {
+        "2021-06": {
+            "total_articles": 295,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 3,
+                "class_ENT": 254,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 5,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 33
+            }
+        }
+    },
+    {
+        "2021-07": {
+            "total_articles": 129,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 88,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 13,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 28
+            }
+        }
+    },
+    {
+        "2021-08": {
+            "total_articles": 410,
+            "class_counts": {
+                "class_SOCIAL": 3,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 2,
+                "class_ENT": 333,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 0,
+                "class_AD": 2,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 70
+            }
+        }
+    },
+    {
+        "2021-09": {
+            "total_articles": 41,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 17,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 0,
+                "class_AD": 1,
+                "class_RIP": 5,
+                "class_AWARD": 0,
+                "class_NO": 18
+            }
+        }
+    },
+    {
+        "2021-10": {
+            "total_articles": 162,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 115,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 10,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 37
+            }
+        }
+    },
+    {
+        "2021-11": {
+            "total_articles": 234,
+            "class_counts": {
+                "class_SOCIAL": 6,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 1,
+                "class_ENT": 163,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 6,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 57
+            }
+        }
+    },
+    {
+        "2021-12": {
+            "total_articles": 157,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 111,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 1,
+                "class_AD": 1,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 44
+            }
+        }
+    },
+    {
+        "2022-01": {
+            "total_articles": 152,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 105,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 12,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 1,
+                "class_NO": 34
+            }
+        }
+    },
+    {
+        "2022-02": {
+            "total_articles": 86,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 1,
+                "class_ENT": 30,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 0,
+                "class_AD": 11,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 43
+            }
+        }
+    },
+    {
+        "2022-03": {
+            "total_articles": 201,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 37,
+                "class_ENT": 105,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 9,
+                "class_AD": 7,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 43
+            }
+        }
+    },
+    {
+        "2022-04": {
+            "total_articles": 202,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 0,
+                "class_ENT": 123,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 3,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 75
+            }
+        }
+    },
+    {
+        "2022-05": {
+            "total_articles": 154,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 107,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 5,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 42
+            }
+        }
+    },
+    {
+        "2022-06": {
+            "total_articles": 213,
+            "class_counts": {
+                "class_SOCIAL": 3,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 19,
+                "class_ENT": 128,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 0,
+                "class_AD": 3,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 60
+            }
+        }
+    },
+    {
+        "2022-07": {
+            "total_articles": 199,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 145,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 5,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 49
+            }
+        }
+    },
+    {
+        "2022-08": {
+            "total_articles": 208,
+            "class_counts": {
+                "class_SOCIAL": 1,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 1,
+                "class_ENT": 125,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 34,
+                "class_AD": 3,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 44
+            }
+        }
+    },
+    {
+        "2022-09": {
+            "total_articles": 216,
+            "class_counts": {
+                "class_SOCIAL": 1,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 134,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 62,
+                "class_AD": 2,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 17
+            }
+        }
+    },
+    {
+        "2022-10": {
+            "total_articles": 400,
+            "class_counts": {
+                "class_SOCIAL": 9,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 203,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 147,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 41
+            }
+        }
+    },
+    {
+        "2022-11": {
+            "total_articles": 199,
+            "class_counts": {
+                "class_SOCIAL": 32,
+                "class_ILLEGAL": 2,
+                "class_CONTRACT": 0,
+                "class_ENT": 108,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 47,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 10
+            }
+        }
+    },
+    {
+        "2022-12": {
+            "total_articles": 575,
+            "class_counts": {
+                "class_SOCIAL": 2,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 2,
+                "class_ENT": 424,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 96,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 51
+            }
+        }
+    },
+    {
+        "2023-01": {
+            "total_articles": 92,
+            "class_counts": {
+                "class_SOCIAL": 15,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 37,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 7,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 13,
+                "class_NO": 20
+            }
+        }
+    },
+    {
+        "2023-02": {
+            "total_articles": 138,
+            "class_counts": {
+                "class_SOCIAL": 4,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 28,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 58,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 15,
+                "class_NO": 33
+            }
+        }
+    },
+    {
+        "2023-03": {
+            "total_articles": 103,
+            "class_counts": {
+                "class_SOCIAL": 2,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 54,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 30,
+                "class_AD": 1,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 16
+            }
+        }
+    },
+    {
+        "2023-04": {
+            "total_articles": 122,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 69,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 4,
+                "class_AD": 16,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 33
+            }
+        }
+    },
+    {
+        "2023-05": {
+            "total_articles": 92,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 49,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 8,
+                "class_AD": 1,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 34
+            }
+        }
+    },
+    {
+        "2023-06": {
+            "total_articles": 158,
+            "class_counts": {
+                "class_SOCIAL": 20,
+                "class_ILLEGAL": 4,
+                "class_CONTRACT": 34,
+                "class_ENT": 36,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 53,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 11
+            }
+        }
+    },
+    {
+        "2023-07": {
+            "total_articles": 209,
+            "class_counts": {
+                "class_SOCIAL": 10,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 2,
+                "class_ENT": 113,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 52,
+                "class_AD": 0,
+                "class_RIP": 1,
+                "class_AWARD": 0,
+                "class_NO": 30
+            }
+        }
+    },
+    {
+        "2023-08": {
+            "total_articles": 179,
+            "class_counts": {
+                "class_SOCIAL": 1,
+                "class_ILLEGAL": 6,
+                "class_CONTRACT": 0,
+                "class_ENT": 65,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 77,
+                "class_AD": 6,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 24
+            }
+        }
+    },
+    {
+        "2023-09": {
+            "total_articles": 415,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 283,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 102,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 30
+            }
+        }
+    },
+    {
+        "2023-10": {
+            "total_articles": 99,
+            "class_counts": {
+                "class_SOCIAL": 1,
+                "class_ILLEGAL": 15,
+                "class_CONTRACT": 0,
+                "class_ENT": 59,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 15,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 1,
+                "class_NO": 8
+            }
+        }
+    },
+    {
+        "2023-11": {
+            "total_articles": 162,
+            "class_counts": {
+                "class_SOCIAL": 5,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 74,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 51,
+                "class_AD": 0,
+                "class_RIP": 1,
+                "class_AWARD": 4,
+                "class_NO": 27
+            }
+        }
+    },
+    {
+        "2023-12": {
+            "total_articles": 220,
+            "class_counts": {
+                "class_SOCIAL": 2,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 2,
+                "class_ENT": 91,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 79,
+                "class_AD": 0,
+                "class_RIP": 7,
+                "class_AWARD": 4,
+                "class_NO": 35
+            }
+        }
+    },
+    {
+        "2024-01": {
+            "total_articles": 420,
+            "class_counts": {
+                "class_SOCIAL": 11,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 0,
+                "class_ENT": 182,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 75,
+                "class_AD": 3,
+                "class_RIP": 41,
+                "class_AWARD": 3,
+                "class_NO": 104
+            }
+        }
+    },
+    {
+        "2024-02": {
+            "total_articles": 233,
+            "class_counts": {
+                "class_SOCIAL": 10,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 122,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 36,
+                "class_AD": 0,
+                "class_RIP": 14,
+                "class_AWARD": 5,
+                "class_NO": 46
+            }
+        }
+    },
+    {
+        "2024-03": {
+            "total_articles": 210,
+            "class_counts": {
+                "class_SOCIAL": 8,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 0,
+                "class_ENT": 92,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 40,
+                "class_AD": 11,
+                "class_RIP": 1,
+                "class_AWARD": 6,
+                "class_NO": 51
+            }
+        }
+    },
+    {
+        "2024-04": {
+            "total_articles": 102,
+            "class_counts": {
+                "class_SOCIAL": 2,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 1,
+                "class_ENT": 34,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 39,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 4,
+                "class_NO": 22
+            }
+        }
+    },
+    {
+        "2024-05": {
+            "total_articles": 282,
+            "class_counts": {
+                "class_SOCIAL": 1,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 185,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 29,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 67
+            }
+        }
+    },
+    {
+        "2024-06": {
+            "total_articles": 305,
+            "class_counts": {
+                "class_SOCIAL": 1,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 3,
+                "class_ENT": 198,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 50,
+                "class_AD": 0,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 52
+            }
+        }
+    },
+    {
+        "2024-07": {
+            "total_articles": 343,
+            "class_counts": {
+                "class_SOCIAL": 0,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 1,
+                "class_ENT": 97,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 150,
+                "class_AD": 16,
+                "class_RIP": 0,
+                "class_AWARD": 1,
+                "class_NO": 78
+            }
+        }
+    },
+    {
+        "2024-08": {
+            "total_articles": 413,
+            "class_counts": {
+                "class_SOCIAL": 2,
+                "class_ILLEGAL": 0,
+                "class_CONTRACT": 0,
+                "class_ENT": 307,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 31,
+                "class_AD": 1,
+                "class_RIP": 0,
+                "class_AWARD": 3,
+                "class_NO": 69
+            }
+        }
+    },
+    {
+        "2024-09": {
+            "total_articles": 364,
+            "class_counts": {
+                "class_SOCIAL": 12,
+                "class_ILLEGAL": 1,
+                "class_CONTRACT": 4,
+                "class_ENT": 206,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 91,
+                "class_AD": 1,
+                "class_RIP": 0,
+                "class_AWARD": 1,
+                "class_NO": 48
+            }
+        }
+    },
+    {
+        "2024-10": {
+            "total_articles": 464,
+            "class_counts": {
+                "class_SOCIAL": 20,
+                "class_ILLEGAL": 2,
+                "class_CONTRACT": 0,
+                "class_ENT": 358,
+                "class_SAJAEGI": 0,
+                "class_MUSIC": 14,
+                "class_AD": 2,
+                "class_RIP": 0,
+                "class_AWARD": 0,
+                "class_NO": 68
+            }
+        }
+    }
+]

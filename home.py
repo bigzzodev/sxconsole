@@ -9,7 +9,6 @@ def _fnumber(num):
 def all_dashboard_company(_company):
     # st.subheader(f'분석할 회사 : {_company}')
 
-
     st.subheader(f'뉴스 분석 시스템')
 
     tab1, tab2, tab3 = st.tabs(["전체 통계 지표", "시스템에 대한 설명", "분류기준 설명"])
@@ -17,10 +16,6 @@ def all_dashboard_company(_company):
         col_a, col_b = st.columns(2)
         col_a.metric("총 수집 가수 수 ", _fnumber(4) + " 명", "")
         col_b.metric("총 뉴스 기사 수 ( 2020.01.01 ~ 2024.11.04 ) ", _fnumber(149279) + " 개", "")
-
-
-
-
         col1, col2, col3, col4, col5,= st.columns(5)
         col1.metric("SOCIAL 관련기사", _fnumber(11213) + " 개", "")
         col2.metric("ILLEGAL 관련기사", _fnumber(15658) + " 개", "")
@@ -47,26 +42,16 @@ def all_dashboard_company(_company):
         가수 뉴스 #1
         '''
         st.markdown(multi)
-
-
-
         multi = '''timeline
 
         가수 뉴스 #2
         '''
         st.markdown(multi)
-
-
-
         multi = '''timeline
 
         가수 뉴스 #3
         '''
         st.markdown(multi)
-
-
-
-
 
     with tab2:
         st.markdown(f"<h4><span style='font-size:20px; color:gray;'>시스템 사용 설명</span></h4>", unsafe_allow_html=True)
@@ -93,29 +78,6 @@ def all_dashboard_company(_company):
         st.write('- **NO** : 위 어느 분류에도 해당하지 않은것들')
     st.divider()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # ---------------------------------------------------------------------------------------
 def page_header():
     st.set_page_config(page_icon = ':sparkles:', page_title = 'TechLab', layout = 'wide',)
@@ -124,6 +86,17 @@ def page_header():
     #     st.info('Enter an OpenAI API Key to continue')
     #     st.stop()
     # st.divider()
+
+    hide_streamlit_style = """
+        <style>
+        [data-testid="stToolbar"] {visibility: hidden !important;}
+        footer {visibility: hidden !important;}
+        </style>
+        """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+    with open('style.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # # ---------------------------------------------------------------------------------------
 # def display():
@@ -142,8 +115,6 @@ def page_header():
 
 #     st.subheader(f'"{selected}" 에 대해 질문하기')
 #     display_main(selected, clear_btn)
-
-
 
 # ---------------------------------------------------------------------------------------
 if __name__ == '__main__':

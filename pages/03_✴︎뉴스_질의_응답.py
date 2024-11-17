@@ -117,16 +117,7 @@ def page_header():
     # if not os.getenv("OPENAI_API_KEY"):
     #     st.info('Enter an OpenAI API Key to continue')
     #     st.stop()
-    hide_streamlit_style = """
-        <style>
-        [data-testid="stToolbar"] {visibility: hidden !important;}
-        footer {visibility: hidden !important;}
-        </style>
-        """
-    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-    with open('style.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
     st.divider()
 
 # ---------------------------------------------------------------------------------------
@@ -318,5 +309,18 @@ def display():
 # ---------------------------------------------------------------------------------------
 if __name__ == '__main__':
     page_header()
+
+    hide_streamlit_style = """
+        <style>
+        [data-testid="stToolbar"] {visibility: hidden !important;}
+        footer {visibility: hidden !important;}
+        </style>
+        """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+    with open('style.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+
     display()
     env.langsmith(ST_TRACE)

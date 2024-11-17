@@ -111,6 +111,19 @@ def _stopwords():
 def page_header():
     st.set_page_config(page_icon = ':sparkles:', page_title = 'TechLab', layout = 'wide',)
     # st.title('_:red[Musicow] :gray[Techlab]_ :goat:')
+
+    hide_streamlit_style = """
+        <style>
+        [data-testid="stToolbar"] {visibility: hidden !important;}
+        footer {visibility: hidden !important;}
+        </style>
+        """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+    with open('style.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+
     st.divider()
 
 # ---------------------------------------------------------------------------------------

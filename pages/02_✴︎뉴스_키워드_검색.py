@@ -112,7 +112,6 @@ def page_header():
     st.set_page_config(page_icon = ':sparkles:', page_title = 'TechLab', layout = 'wide',)
     # st.title('_:red[Musicow] :gray[Techlab]_ :goat:')
 
-    st.divider()
 
 # ---------------------------------------------------------------------------------------
 # def _create_chain(_prompt_type):
@@ -275,6 +274,7 @@ def display():
         # option = st.selectbox('검색 모드를 선택해 주세요', ('기본모드', 'SNS 게시글', '요약'), index=0)
 
     st.subheader(f'"{selected}" 키워드 검색')
+    st.divider()
     display_main(selected)
 
 # ---------------------------------------------------------------------------------------
@@ -288,6 +288,9 @@ if __name__ == '__main__':
         </style>
         """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+    with open('style.css') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
     display()
     env.langsmith(ST_TRACE)

@@ -275,7 +275,7 @@ def display_main(_selected):
     # selected = st.selectbox("검색 결과 리스트", search_results)
 
     # Create tabs for different sections
-    tabs = ["가수 기본 정보", "AI 분석 보고서", "가수 체크사항"]
+    tabs = ["가수 기본 정보", "가수 체크사항", "AI 분석 보고서"]
     tab1, tab2, tab3 = st.tabs(tabs)
 
 
@@ -325,18 +325,8 @@ def display_main(_selected):
         cols[3].subheader("순 현금흐름")
         cols[3].line_chart(stock_data['cash_flow'].loc['Free Cash Flow'])
 
-    # Content for "AI 분석 보고서" tab
-    with tab2:
-        st.header("AI 분석 보고서")
-        if st.button("보고서 불러오기"):
-            with st.spinner(text='In progress'):
-                # data = cache_AI_report(selected.symbol)
-                data = cache_AI_report('AAPL')
-                st.success('Done')
-            st.write(data)
-
     # Content for "종목 토론실" tab
-    with tab3:
+    with tab2:
         st.header("가수 체크사항")
         conn = create_connection()
         create_table(conn)
@@ -351,6 +341,17 @@ def display_main(_selected):
             insert_comment(conn, f'{_selected} - {new_comment}')
             st.success("댓글이 작성되었습니다")
             st.rerun()
+
+    # Content for "AI 분석 보고서" tab
+    with tab3:
+        st.header("AI 분석 보고서")
+        if st.button("보고서 불러오기"):
+            with st.spinner(text='In progress'):
+                # data = cache_AI_report(selected.symbol)
+                data = cache_AI_report('AAPL')
+                st.success('Done')
+            st.write(data)
+
 
 # ---------------------------------------------------------------------------------------
 def display():

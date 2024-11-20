@@ -165,29 +165,68 @@ def _print_message(messages_key):
 
 #     return response
 
-# ---------------------------------------------------------------------------------------
+
+# @st.cache_data
+# def cache_qna_main(_selected, _user_input):
+
+#     print(f'>> {_selected}')
+#     print(f'>> {_user_input}')
+#     return qna_main(_selected, _user_input)
+
+# # @st.cache_data
+# @st.cache_data(hash_funcs={str: lambda x: x})
+# def cache_qna_main(_selected, _user_input):
+#     print(f"[cache_qna_main 실행] >> _selected: {_selected}, _user_input: {_user_input}")
+#     return qna_main(_selected, _user_input)
+
+
+# @st.cache_data(hash_funcs={str: lambda x: x})
+# def cache_qna_main(_selected, _user_input):
+#     print(f"[cache_qna_main 호출됨] >> _selected: {_selected}, _user_input: {_user_input}")
+#     return qna_main(_selected, _user_input)
+# 캐시된 임베딩 함수 (직렬화 불가 객체이므로 cache_resource 사용)
+
+@st.cache_resource
+def get_embeddings():
+    return OpenAIEmbeddings(model='text-embedding-3-small', openai_api_key=env.openai_api_key)
+
+# 캐시된 리트리버 함수 (인자 이름에 언더스코어를 추가하여 해싱 방지)
+@st.cache_resource
+def get_retriever(_selected, _embeddings):
+    pparams = _init_pinecone(
+        index_name=RAG_DB_INDEX,
+        namespace=rag_db_namespace(_selected),
+        api_key=env.pinecone_api_key,
+        sparse_encoder_path=f'{ST_PICKLE_DIR}/day_{_selected}_sparse_encoder.pkl',
+        stwords=_stopwords(),
+        tokenizer='kiwi',
+        embeddings=_embeddings,
+        top_k=ST_QNA_TOPK,
+        alpha=ST_QNA_ALPHA,
+    )
+    return PineconeKiwiHybridRetriever(**pparams)
+
+# 캐시 제거
+def cache_qna_main(_selected, _user_input):
+    print(f"[cache_qna_main 호출됨] >> _selected: {_selected}, _user_input: {_user_input}")
+    return qna_main(_selected, _user_input)
+
+
+
 def qna_main(_selected, _user_input):
     try:
-        emb = OpenAIEmbeddings(model='text-embedding-3-small', openai_api_key=env.openai_api_key)  # 1536
-        pparams = _init_pinecone(
-            index_name=RAG_DB_INDEX,
-            namespace=rag_db_namespace(_selected),
-            api_key=env.pinecone_api_key,
-            sparse_encoder_path=f'{ST_PICKLE_DIR}/day_{_selected}_sparse_encoder.pkl',
-            stwords=_stopwords(),
-            tokenizer='kiwi',
-            embeddings=emb,
-            top_k=ST_QNA_TOPK,
-            alpha=ST_QNA_ALPHA,  # 0:키워드매칭
-        )
-        retriever = PineconeKiwiHybridRetriever(**pparams)
+        emb = get_embeddings()
+        retriever = get_retriever(_selected, emb)
         search_res = retriever.invoke(_user_input, search_kwargs={'alpha': ST_QNA_ALPHA, 'k': ST_QNA_TOPK})
-        for rx in search_res:
-            print('\n---------------------------------------------------------------')
-            print(f'>> {rx.metadata['classname']}')
-            print(f'>> {rx.metadata['date']}\n')
-            print(rx.page_content)
-            print('\n')
+
+        # # 검색 결과 출력 (디버깅 목적)
+        # for rx in search_res:
+        #     print('\n---------------------------------------------------------------')
+        #     print(f'>> {rx.metadata["classname"]}')
+        #     print(f'>> {rx.metadata["date"]}\n')
+        #     print(rx.page_content)
+        #     print('\n')
+
         px = _prompt_template_yaml()
         prompt = PromptTemplate.from_template(px['prompt'])
         prompt = prompt.partial(singer=_selected)
@@ -208,8 +247,54 @@ def qna_main(_selected, _user_input):
         return response
 
     except Exception as e:
-        # logger.error(f'[*] ssak3-index encountered an error : {e}')
         print(f'>> error : {e}')
+        return "오류가 발생하였습니다."
+
+# # ---------------------------------------------------------------------------------------
+# def qna_main(_selected, _user_input):
+#     try:
+#         emb = OpenAIEmbeddings(model='text-embedding-3-small', openai_api_key=env.openai_api_key)  # 1536
+#         pparams = _init_pinecone(
+#             index_name=RAG_DB_INDEX,
+#             namespace=rag_db_namespace(_selected),
+#             api_key=env.pinecone_api_key,
+#             sparse_encoder_path=f'{ST_PICKLE_DIR}/day_{_selected}_sparse_encoder.pkl',
+#             stwords=_stopwords(),
+#             tokenizer='kiwi',
+#             embeddings=emb,
+#             top_k=ST_QNA_TOPK,
+#             alpha=ST_QNA_ALPHA,  # 0:키워드매칭
+#         )
+#         retriever = PineconeKiwiHybridRetriever(**pparams)
+#         search_res = retriever.invoke(_user_input, search_kwargs={'alpha': ST_QNA_ALPHA, 'k': ST_QNA_TOPK})
+#         for rx in search_res:
+#             print('\n---------------------------------------------------------------')
+#             print(f'>> {rx.metadata['classname']}')
+#             print(f'>> {rx.metadata['date']}\n')
+#             print(rx.page_content)
+#             print('\n')
+#         px = _prompt_template_yaml()
+#         prompt = PromptTemplate.from_template(px['prompt'])
+#         prompt = prompt.partial(singer=_selected)
+
+#         GPT_4o_mini = 'gpt-4o-mini-2024-07-18'
+#         llm = ChatOpenAI(model_name=GPT_4o_mini, openai_api_key=env.openai_api_key, temperature=0.0, verbose=True)
+#         chain = (
+#             {'context': retriever | fmt_docs, 'question': RunnablePassthrough()}
+#             | prompt
+#             | llm
+#             | StrOutputParser()
+#         )
+
+#         response = chain.invoke(_user_input)
+#         if response is None:
+#             response = "답변을 생성할 수 없습니다."
+#         print(response)
+#         return response
+
+#     except Exception as e:
+#         # logger.error(f'[*] ssak3-index encountered an error : {e}')
+#         print(f'>> error : {e}')
 
 # # ---------------------------------------------------------------------------------------
 # def display_main(_selected, clear_btn):
@@ -269,7 +354,7 @@ def display_main(_selected, clear_btn):
         _add_message(ST_USER, user_input, messages_key)
         with st.chat_message(ST_ASSISTANT):
             with st.spinner('Loading...'):
-                response = qna_main(_selected, user_input)  # 응답을 기다리는 동안 스피너 표시
+                response = cache_qna_main(_selected, user_input)  # 응답을 기다리는 동안 스피너 표시
                 st.write(response)  # 응답이 완료되면 표시
         _add_message(ST_ASSISTANT, response, messages_key)
 
@@ -321,7 +406,6 @@ if __name__ == '__main__':
 
     with open('style.css') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
 
     display()
     env.langsmith(ST_TRACE)

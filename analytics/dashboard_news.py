@@ -140,7 +140,8 @@ def _is_skip_class(_json_data, _target, _class):
 
 # ------------------------------------------------------------------------------------------------------------------------
 def all_dashboard_news(_singer):
-    st.subheader(f'분석할 가수 : "{_singer}"')
+    # st.subheader(f'분석할 가수 : "{_singer}" 통계 분석')
+    st.subheader(f'"{_singer}" 통계 분석')
     fmname = f'./jsondata/year_{_singer}.json'
     with open(fmname, "r", encoding="utf-8") as file:
         year_data = json.load(file)

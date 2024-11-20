@@ -15,12 +15,12 @@ kiwipiepy
 # seaborn
 # streamlit-plotly-events
 
-
-
-
 langchain
 python-dotenv==1.0.1
 langchain-community==0.3.2
 pymupdf
 langchain_openai
 
+yfinance
+meilisearch
+tabulate
